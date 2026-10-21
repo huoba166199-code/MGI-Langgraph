@@ -1,0 +1,12 @@
+services:
+  mgi-agent:
+    build: .
+    container_name: mgi_device_agent
+    ports:
+      - "8503:8503"
+    env_file:
+      - .env
+    volumes:
+      # 将本地的数据库文件映射进容器，实现数据持久化
+      - ./mgi_session.db:/app/mgi_session.db
+    restart: unless-stopped

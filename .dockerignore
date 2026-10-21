@@ -1,0 +1,17 @@
+# 忽略 Python 缓存
+__pycache__/
+*.pyc
+
+# 忽略本地环境变量（极其重要，防止 API Key 泄露到镜像里）
+.env
+
+# 忽略本地生成的临时数据库和向量库
+chroma_db/
+*.db
+*.db-shm
+*.db-wal
+checkpoints.db
+
+# 忽略 Git 和 IDE 的配置
+.git/
+.idea/

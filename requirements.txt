@@ -1,0 +1,11 @@
+streamlit
+langgraph
+langchain
+langchain-deepseek
+langchain-core
+python-dotenv
+pydantic
+rank_bm25
+jieba
+requests
+pytest
